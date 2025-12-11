@@ -1,10 +1,10 @@
 name: Match Ticket Monitor
 
 on:
-  schedule:
-    # Runs every 5 minutes between 7 AM - 11 PM Nepal Time (1 AM - 5 PM UTC)
-    # Offset by 2 minutes to avoid GitHub's high-load periods
-    - cron: '2,7,12,17,22,27,32,37,42,47,52,57 1-17 * * *'
+  # schedule:
+  #   # Runs every 5 minutes between 7 AM - 11 PM Nepal Time (1 AM - 5 PM UTC)
+  #   # Offset by 2 minutes to avoid GitHub's high-load periods
+  #   - cron: '2,7,12,17,22,27,32,37,42,47,52,57 1-17 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
